@@ -1,0 +1,56 @@
+.card {
+  margin: auto !important;
+}
+
+.card-size-small {
+  max-width: 576px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card-size-medium {
+  max-width: 768px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card-size-large {
+  max-width: 992px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card-size-max {
+  max-width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.table th {
+  font-weight: bold;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table-wrap {
+  width: 100%;
+}
+
+.footer {
+  position: relative !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #ffc107 !important;
+}
