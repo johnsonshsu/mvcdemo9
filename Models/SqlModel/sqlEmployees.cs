@@ -23,13 +23,8 @@ namespace mvcdemo9.Models
 SELECT Employees.Id, Employees.IsValid, Employees.EmpNo, Employees.EmpName, Employees.GenderCode, 
 vi_CodeGender.CodeName AS GenderName, Employees.DeptNo, Departments.DeptName, Employees.TitleNo, 
 Titles.TitleName, Employees.Birthday, Employees.OnboardDate, Employees.LeaveDate, Employees.ContactEmail, 
-Employees.ContactTel, Employees.ContactAddress, Employees.IdentityID, Employees.RegisterTel, 
-Employees.RegisterAddress, Employees.UrgentName, Employees.UrgentTel, Employees.RelationNo, 
-vi_CodeRelation.CodeName AS RelationName, Employees.CertificateNo, 
-vi_CodeCertificate.CodeName AS CertificateName, Employees.Remark
+Employees.ContactTel, Employees.ContactAddress,  Employees.Remark
 FROM Employees 
-LEFT OUTER JOIN vi_CodeCertificate ON Employees.CertificateNo = vi_CodeCertificate.CodeNo 
-LEFT OUTER JOIN vi_CodeRelation ON Employees.RelationNo = vi_CodeRelation.CodeNo 
 LEFT OUTER JOIN vi_CodeGender ON Employees.GenderCode = vi_CodeGender.CodeNo 
 LEFT OUTER JOIN Departments ON Employees.DeptNo = Departments.DeptNo 
 LEFT OUTER JOIN Titles ON Employees.TitleNo = Titles.TitleNo 
