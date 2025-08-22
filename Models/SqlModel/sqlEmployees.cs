@@ -22,7 +22,7 @@ namespace mvcdemo9.Models
         {
             string str_query = @"
 SELECT Employees.Id, Employees.IsValid, Employees.EmpNo, Employees.EmpName, Employees.GenderCode, 
-vi_CodeGender.CodeName AS GenderName, Employees.DeptNo, dbo.fn_get_dept_name(Employees.DeptNo) AS DeptName, 
+vi_CodeGender.CodeName AS GenderName, Employees.DeptNo, Departments.DeptName, 
 Employees.TitleNo, Titles.TitleName, Employees.Birthday, Employees.OnboardDate, Employees.LeaveDate, 
 Employees.ContactEmail, Employees.ContactTel, Employees.CityName, Employees.CityArea, Employees.ContactAddress, 
 ISNULL(Employees.CityName , '') + ISNULL(Employees.CityArea , '') + ISNULL(Employees.ContactAddress , '') AS FullAddress,
