@@ -1,10 +1,10 @@
 @if (TempData["SuccessMessage"] != null)
 {
     <script type="text/javascript">
-        $(document).ready(function () {   
+        $(document).ready(function () {
             toastr.success('@TempData["SuccessMessage"]')
         })
-    </script>                                 
+    </script>
 }
 @if (TempData["ErrorMessage"] != null)
 {
@@ -12,7 +12,7 @@
         $(document).ready(function () {
             toastr.error('@TempData["ErrorMessage"]')
         })
-    </script>                                 
+    </script>
 }
 @if (TempData["InfoMessage"] != null)
 {
@@ -20,7 +20,7 @@
         $(document).ready(function () {
             toastr.info('@TempData["InfoMessage"]')
         })
-    </script>                                 
+    </script>
 }
 @if (TempData["WarningMessage"] != null)
 {
@@ -28,15 +28,7 @@
         $(document).ready(function () {
             toastr.warning('@TempData["WarningMessage"]')
         })
-    </script>                                 
-}
-@if (TempData["ErrorMessage"] != null)
-{
-    <script type="text/javascript">
-        $(document).ready(function () {
-            toastr.error('@TempData["ErrorMessage"]')
-        })
-    </script>                                 
+    </script>
 }
 <script>
     function DeleteData(id, data) {
