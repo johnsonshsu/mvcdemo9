@@ -198,3 +198,7 @@ a:active {
     cursor: pointer;
     font-weight: bold;
 }
+
+.action-popup {
+    width: 30px;
+}

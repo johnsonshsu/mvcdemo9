@@ -363,4 +363,15 @@ public static partial class Extension
         }
         return strDate;
     }
+
+    /// <summary>
+    /// 取得星期的中文名稱
+    /// </summary>
+    /// <param name="date">指定日期</param>
+    /// <returns></returns>
+    public static string ezWeekChineseName(this DateTime date)
+    {
+        string[] WeekNames = new string[] { "日", "一", "二", "三", "四", "五", "六" };
+        return WeekNames[Convert.ToInt32(date.DayOfWeek.ToString("d"))];
+    }
 }

@@ -314,10 +314,13 @@ public static class ActionService
         { _context?.Session.Set<string>("ViewActionName", value); }
     }
     /// <summary>
+    /// Admin Action 名稱
+    /// </summary>
+    public static string Admin { get { return "Admin"; } }
+    /// <summary>
     /// Home Action 名稱
     /// </summary>
     public static string Home { get { return "Home"; } }
-
     /// <summary>
     /// Init Action 名稱
     /// </summary>

@@ -154,6 +154,24 @@ public static class SessionService
         set { SetSessionValue<string>("UserName", value); }
     }
     /// <summary>
+    /// 登入使用者組織
+    /// </summary>
+    /// <value></value>
+    public static string OrgNo
+    {
+        get { return GetSessionValue<string>("OrgNo", "").ToString(); }
+        set { SetSessionValue<string>("OrgNo", value); }
+    }
+    /// <summary>
+    /// 登入使用者公司
+    /// </summary>
+    /// <value></value>
+    public static string CompanyNo
+    {
+        get { return GetSessionValue<string>("CompanyNo", "").ToString(); }
+        set { SetSessionValue<string>("CompanyNo", value); }
+    }
+    /// <summary>
     /// 登入使用者角色
     /// </summary>
     /// <value></value>
